@@ -12,5 +12,5 @@ Recursos:
 - Delete filme da lista de favoritos criada pelo usuário
 
 Relações:
-- O usuário pode avaliar mais que um filme/série,
-- A lista de favoritos pode conter mais de que um filme/série.
+- O usuário pode avaliar mais que um filme,
+- A lista de favoritos pode conter mais de que um filme.
