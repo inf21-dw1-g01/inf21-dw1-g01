@@ -41,22 +41,6 @@ exports.retrieveFilme = function(id) {
         console.log(res);
         resolve(res[0]);
       }
-    var examples = {};
-    examples['application/json'] = {
-  "original_title" : "original_title",
-  "release_date" : "release_date",
-  "genre" : "genre",
-  "runtime" : 6,
-  "language" : "language",
-  "id" : 0,
-  "title" : "title",
-  "adult" : "adult"
-};
-    if (Object.keys(examples).length > 0) {
-      resolve(examples[Object.keys(examples)[0]]);
-    } else {
-      resolve();
-    }
   });
   });
 }
@@ -78,31 +62,6 @@ exports.retrieveFilmes = function() {
         console.log(res);
         resolve(res[0]);
       }
-    var examples = {};
-    examples['application/json'] = [ {
-  "original_title" : "original_title",
-  "release_date" : "release_date",
-  "genre" : "genre",
-  "runtime" : 6,
-  "language" : "language",
-  "id" : 0,
-  "title" : "title",
-  "adult" : "adult"
-}, {
-  "original_title" : "original_title",
-  "release_date" : "release_date",
-  "genre" : "genre",
-  "runtime" : 6,
-  "language" : "language",
-  "id" : 0,
-  "title" : "title",
-  "adult" : "adult"
-} ];
-    if (Object.keys(examples).length > 0) {
-      resolve(examples[Object.keys(examples)[0]]);
-    } else {
-      resolve();
-    }
   });
 });
 }
