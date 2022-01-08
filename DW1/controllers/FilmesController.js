@@ -3,15 +3,7 @@
 var utils = require('../utils/writer.js');
 var FilmesController = require('../service/FilmesControllerService');
 
-module.exports.deleteFilmes = function deleteFilmes (req, res, next, id) {
-  FilmesController.deleteFilmes(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
-};
+
 
 module.exports.retrieveFilme = function retrieveFilme (req, res, next, id) {
   FilmesController.retrieveFilme(id)
