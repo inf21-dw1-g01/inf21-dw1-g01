@@ -117,34 +117,6 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: FilmesController
-    delete:
-      tags:
-      - FilmesController
-      summary: Delete Filmes
-      operationId: deleteFilmes
-      parameters:
-      - name: id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          minimum: 1
-          type: integer
-          format: int64
-        examples:
-          one:
-            summary: Delete Filmes id 1
-            value: 1
-          two:
-            summary: Delete Filmes id 2
-            value: 2
-      responses:
-        "204":
-          description: No Content
-        "404":
-          description: id not found
-      x-swagger-router-controller: FilmesController
   /User:
     get:
       tags:
@@ -385,6 +357,8 @@ components:
           type: string
         mail:
           type: string
+        lista:
+          type: int
       additionalProperties: false
       example:
         mail: mail
@@ -410,12 +384,6 @@ components:
       xml:
         name: Filmes
   examples:
-    UserExemple01:
-      value:
-        id: 1
-        first_name: AAAAA
-        last_name: ZZZZ
-        mail: jjj@jjj.com
     FilmesExample01:
       value:
         id: 1
