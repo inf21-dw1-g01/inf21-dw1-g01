@@ -1,28 +1,6 @@
 'use strict';
 
 
-/**
- * Delete Filmes -------------- alterei !!!!!
- *
- * id Long 
- * no response value expected for this operation
- **/
-exports.deleteFilmes = function(id) {
-  return new Promise(function(resolve, reject) {
-    sql.query("DELETE FROM filmes WHERE id = ?", [id], function (err, res){
-      if (err || !res.affectedRows){
-        console.log(err);
-        console.log(res);
-        reject();
-      }
-      else{
-        console.log(res);
-        resolve({"deleted":id});
-      }
-    });
-  });
-}
-
 
 /**
  * Retrieve Filmes --------------- alterei !!!!!!!!
