@@ -117,6 +117,64 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: FilmesController
+  /Genero:
+    get:
+      tags:
+      - GeneroController
+      summary: Retrieve Genero
+      operationId: retrieveGenero
+      responses:
+        "200":
+          description: Array of Genero model instances
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Genero'
+                x-content-type: application/json
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+      x-swagger-router-controller: GeneroController
+  /Genero/{id}:
+    get:
+      tags:
+      - GeneroController
+      summary: Retrieve Genero
+      operationId: retrieveGeneros
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          minimum: 1
+          type: integer
+          format: int64
+        examples:
+          one:
+            summary: Retrieve genero id 1
+            value: 1
+          two:
+            summary: Retrieve genero id 2
+            value: 2
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Genero'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Genero'
+        "400":
+          description: Bad request
+        "404":
+          description: id not found
+      x-swagger-router-controller: GeneroController
   /User:
     get:
       tags:
@@ -189,10 +247,11 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: UserController
-  /User/{fav}:
+      
+  /Favoritos/{fav}:
     get:
       tags:
-      - UserController
+      - FavoritosController
       summary: Retrieve Favoritos
       operationId: retrieveFavoritos
       parameters:
@@ -229,7 +288,7 @@ paths:
       x-swagger-router-controller: UserController
     put:
       tags:
-      - UserController
+      - FavoritosController
       summary: Update Favoritos
       operationId: updateFavoritos
       parameters:
@@ -275,7 +334,7 @@ paths:
       x-swagger-router-controller: UserController
     delete:
       tags:
-      - UserController
+      - FavoritosController
       summary: Delete Favoritos
       operationId: deleteFavoritos
       parameters:
@@ -301,6 +360,8 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: UserController
+      
+  
 components:
   schemas:
     Filmes:
@@ -383,6 +444,22 @@ components:
             $ref: '#/components/schemas/User'
       xml:
         name: User
+    Genero:
+      title: Genero
+      required: 
+      - id
+      - genero
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        genero:
+          type: string
+      additionalProperties: false
+      example:
+        id: 0
+        genero: genero
   examples:
     FilmesExample01:
       value:
