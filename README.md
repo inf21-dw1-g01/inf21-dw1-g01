@@ -13,19 +13,19 @@ _O repositório está organizado da seguite maneira:_
 * Report chapters estão no [doc folder](doc/).
 * Initial [OpenApi document](api/openapi.yaml)
 
-## Galeria
+## Galeria ----------------------- VER
 
 _Please provide a galery of the final result, with small images_
 A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
 
-## Tecnologias
+## Tecnologias ----------------------- VER
 
 _As tecnologias usadas neste projeto, foram as seguites:_
 * Javascript
 * nodeJS
 
 
-### Frameworks e Livrarias
+### Frameworks e Livrarias ----------------------- VER
 
 _Did you use any aditional libraries? Describe them here._
 * Docker
@@ -35,13 +35,13 @@ _Did you use any aditional libraries? Describe them here._
 _Estão adicionados um documento por capítulo_
 
 ### Apresentação do projeto
-* Chapter 1: [Project presentation](doc/c1.md)
+* Capítulo 1: [Project presentation](doc/c1.md)
 ### Recursos
-* Chapter 2: [Resources](doc/c2.md)
+* Capítulo 2: [Resources](doc/c2.md)
 ### Produtos
-* Chapter 3: [Product](doc/c3.md)
+* Capítulo 3: [Product](doc/c3.md)
 ### Apresentação
-* Chapter 4: [Presentation](doc/c4.md)
+* Capítulo 4: [Presentation](doc/c4.md)
 
 ## Grupo _01_
 * Ana Filipa Azevexo [@AnaAzevedo](https://github.com/AnaAzevedo2) 
