@@ -358,7 +358,7 @@ components:
         mail:
           type: string
         lista:
-          type: int
+          type: integer
       additionalProperties: false
       example:
         mail: mail
@@ -368,21 +368,21 @@ components:
     inline_response_200:
       type: object
       properties:
-        Lesson:
-          type: array
-          items:
-            $ref: '#/components/schemas/Filmes'
-      xml:
-        name: Filmes
-    inline_response_200_1:
-      type: object
-      properties:
-        Lesson:
+        User:
           type: array
           items:
             $ref: '#/components/schemas/User'
       xml:
-        name: Filmes
+        name: User
+    inline_response_200_1:
+      type: object
+      properties:
+        User:
+          type: array
+          items:
+            $ref: '#/components/schemas/User'
+      xml:
+        name: User
   examples:
     FilmesExample01:
       value:
