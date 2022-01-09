@@ -1,6 +1,6 @@
 # M2 - Desenvolvimento Web I
 
-Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimento Web I', uma disciplina de primeiro ano da Universidade da Maia. Desenvolvido pelo Grupo 1: [@AnaAzevedo](https://github.com/AnaAzevedo2), [@MarianaLopes](https://github.com/marlope02), [@MarioRodrigues](https://github.com/MarioRodrigues2304).
+Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimento Web I', uma disciplina de primeiro ano da Universidade da Maia. Desenvolvido pelo Grupo _01_: [@AnaAzevedo](https://github.com/AnaAzevedo2), [@MarianaLopes](https://github.com/marlope02), [@MarioRodrigues](https://github.com/MarioRodrigues2304).
 
 ## Tema 
 
@@ -43,7 +43,7 @@ _Estão adicionados um documento por capítulo_
 ### Apresentação
 * Chapter 4: [Presentation](doc/c4.md)
 
-## Grupo 01
+## Grupo _01_
 * Ana Filipa Azevexo [@AnaAzevedo](https://github.com/AnaAzevedo2) 
 * Mariana Lopes [@MarianaLopes](https://github.com/marlope02) 
 * Mário Rodrigues [@MarioRodrigues](https://github.com/MarioRodrigues2304)
