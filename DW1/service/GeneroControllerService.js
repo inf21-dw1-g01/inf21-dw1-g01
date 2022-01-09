@@ -1,48 +1,45 @@
 'use strict';
-
+var sql = require('../utils/db.js');
 
 /**
- * Retrieve Genero
+ * Retrieve Genero -------------- Alterei !!!
  *
  * returns List
  **/
 exports.retrieveGenero = function() {
   return new Promise(function(resolve, reject) {
-    var examples = {};
-    examples['application/json'] = [ {
-  "id" : 0,
-  "genero" : "genero"
-}, {
-  "id" : 0,
-  "genero" : "genero"
-} ];
-    if (Object.keys(examples).length > 0) {
-      resolve(examples[Object.keys(examples)[0]]);
-    } else {
-      resolve();
-    }
+    sql.query("SELECT * FROM genero WHERE id = ?", [id], function(err, res){
+      if (err){
+        console.log(err);
+        reject(err);
+      }
+      else{
+        console.log(res);
+        resolve(res[0]);
+      }
+  });
   });
 }
 
 
 /**
- * Retrieve Genero
+ * Retrieve Genero ----------- Alterei!!!
  *
  * id Long 
  * returns Genero
  **/
 exports.retrieveGeneros = function(id) {
   return new Promise(function(resolve, reject) {
-    var examples = {};
-    examples['application/json'] = {
-  "id" : 0,
-  "genero" : "genero"
-};
-    if (Object.keys(examples).length > 0) {
-      resolve(examples[Object.keys(examples)[0]]);
-    } else {
-      resolve();
-    }
+    sql.query("SELECT * FROM genero WHERE id = ?", [id], function(err, res){
+      if (err){
+        console.log(err);
+        reject(err);
+      }
+      else{
+        console.log(res);
+        resolve(res[0]);
+      }
   });
+});
 }
 
