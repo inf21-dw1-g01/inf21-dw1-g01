@@ -71,52 +71,6 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: FilmesController
-    put:
-      tags:
-      - FilmesController
-      summary: Update Filmes
-      operationId: updateFilmes
-      parameters:
-      - name: id
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          minimum: 1
-          type: integer
-          format: int64
-        examples:
-          one:
-            summary: Update Filmes id 1
-            value: 1
-          two:
-            summary: Update Filmes id 2
-            value: 2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Filmes'
-            examples:
-              FilmeExample01:
-                $ref: '#/components/examples/FilmesExample01'
-              FilmeExample02:
-                $ref: '#/components/examples/FilmesExample02'
-        required: true
-      responses:
-        "200":
-          description: Success
-          content:
-            application/json:
-              schema:
-                description: Filmes PUT success
-                x-content-type: application/json
-        "400":
-          description: Bad request
-        "404":
-          description: id not found
-      x-swagger-router-controller: FilmesController
   /Genero:
     get:
       tags:
@@ -286,7 +240,7 @@ paths:
         "404":
           description: id not found
       x-swagger-router-controller: UserController
-    put:
+    post:
       tags:
       - FavoritosController
       summary: Update Favoritos
