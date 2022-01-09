@@ -1,5 +1,5 @@
 # inf21-dw1-g01
-M2 Desenvolvimento Web II
+M2 Desenvolvimento Web I
 
 O nosso trabalho tem como âmbito a criação de um serviço web que permite a consulta dos dados de filmes.
 
