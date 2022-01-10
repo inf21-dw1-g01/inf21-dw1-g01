@@ -44,6 +44,6 @@ _Estão adicionados um documento por capítulo_
 * Capítulo 4: [Apresentação](doc/c4.md)
 
 ## Grupo _01_
-* Ana Filipa Azevexo [@AnaAzevedo](https://github.com/AnaAzevedo2) 
+* Ana Filipa Azevedo [@AnaAzevedo](https://github.com/AnaAzevedo2) 
 * Mariana Lopes [@MarianaLopes](https://github.com/marlope02) 
 * Mário Rodrigues [@MarioRodrigues](https://github.com/MarioRodrigues2304)
