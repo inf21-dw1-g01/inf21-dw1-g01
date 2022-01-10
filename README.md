@@ -10,7 +10,7 @@ Este trabalho tem como âmbito o desenho e criação de um serviço web que perm
 
 _O repositório está organizado da seguite maneira:_
 * **Source code** está no [src folder](src/).
-* Report chapters estão no [doc folder](doc/).
+* Capítulos do relatório estão no [doc folder](doc/).
 * Initial [OpenApi document](api/openapi.yaml)
 
 ## Galeria ----------------------- VER
