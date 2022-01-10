@@ -19,15 +19,15 @@ _Please provide a galery of the final result, with small images_
 A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
 | Métodos                      | Resultado   |
 | ---------------------------- | ----------- |
-| GET (Filmes)                 | ![Get Filmes](images/image09.png)       |
-| GET (Filmes{id})             | ![System architecture](images/image09.png)       |
-| GET (Genero)                 | ![System architecture](images/image09.png)       |
-| GET (Genero{id})             | ![System architecture](images/image09.png)       |
-| GET (User)                   | ![System architecture](images/image09.png)       |
-| GET (User{id}{first_name})   | ![System architecture](images/image09.png)       |
-| GET (Favoritos{id})          | ![System architecture](images/image09.png)       |
-| POST (Favoritos{id})         | ![System architecture](images/image09.png)       |
-| Delete (Favoritos{id})       | ![System architecture](images/image09.png)       |
+| GET (Filmes)                 | ![Get Filmes](doc/images/image09.png)       |
+| GET (Filmes{id})             | ![Get Filmes_id](doc/images/image09.png)       |
+| GET (Genero)                 | ![Get genero](doc/images/image09.png)       |
+| GET (Genero{id})             | ![Get genero_id](doc/images/image09.png)       |
+| GET (User)                   | ![Get user](doc/images/image09.png)       |
+| GET (User{id}{first_name})   | ![Get user_id](doc/images/image09.png)       |
+| GET (Favoritos{id})          | ![Get Fav_id](doc/images/image09.png)       |
+| POST (Favoritos{id})         | ![Post Fav_id](doc/images/image09.png)       |
+| Delete (Favoritos{id})       | ![Delete Fav_id](doc/images/image09.png)       |
 
 ## Tecnologias ----------------------- VER
 
