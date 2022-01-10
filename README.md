@@ -35,13 +35,13 @@ _Did you use any aditional libraries? Describe them here._
 _Estão adicionados um documento por capítulo_
 
 ### Apresentação do projeto
-* Capítulo 1: [Project presentation](doc/c1.md)
+* Capítulo 1: [Apresentação do projeto](doc/c1.md)
 ### Recursos
-* Capítulo 2: [Resources](doc/c2.md)
+* Capítulo 2: [Recursos](doc/c2.md)
 ### Produtos
-* Capítulo 3: [Product](doc/c3.md)
+* Capítulo 3: [Produtos](doc/c3.md)
 ### Apresentação
-* Capítulo 4: [Presentation](doc/c4.md)
+* Capítulo 4: [Apresentação](doc/c4.md)
 
 ## Grupo _01_
 * Ana Filipa Azevexo [@AnaAzevedo](https://github.com/AnaAzevedo2) 
