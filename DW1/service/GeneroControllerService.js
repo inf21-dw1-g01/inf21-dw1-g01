@@ -6,7 +6,7 @@ var sql = require('../utils/db.js');
  *
  * returns List
  **/
-exports.retrieveGenero = function() {
+exports.retrieveGenero = function(id) {
   return new Promise(function(resolve, reject) {
     sql.query("SELECT * FROM genero WHERE id = ?", [id], function(err, res){
       if (err){
@@ -28,9 +28,9 @@ exports.retrieveGenero = function() {
  * id Long 
  * returns Genero
  **/
-exports.retrieveGeneros = function(id) {
+exports.retrieveGeneros = function() {
   return new Promise(function(resolve, reject) {
-    sql.query("SELECT * FROM genero WHERE id = ?", [id], function(err, res){
+    sql.query("SELECT * FROM genero", function(err, res){
       if (err){
         console.log(err);
         reject(err);

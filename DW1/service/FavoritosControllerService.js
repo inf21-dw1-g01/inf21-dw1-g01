@@ -31,7 +31,9 @@ exports.deleteFavoritos = function(fav) {
  * fav Long 
  * returns Filmes
  **/
- exports.retrieveFavoritos = function(fav) {
+
+
+ /*exports.retrieveFavoritos = function(fav) {
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = {
@@ -50,6 +52,21 @@ exports.deleteFavoritos = function(fav) {
       resolve();
     }
   });
+}*/
+
+exports.retrieveFavoritos = function() {
+  return new Promise(function(resolve, reject) {
+    sql.query("Select Filmes.original_title, user.id, user.first_name, user.last_name, mail, user.favoritos from user join lista_filme on user.favoritos = lista_filme.id_lista join filmes on lista_filme.id_filme = filmes.id", function(err, res){
+      if (err){
+        console.log(err);
+        reject(err);
+      }
+      else{
+        console.log(res);
+        resolve(res[0]);
+      }
+  });
+});
 }
 
 

@@ -3,16 +3,16 @@ CREATE SCHEMA `Filmes`;
 USE `Filmes`;
 
 CREATE TABLE `Filmes`(
-    `id` bigint NOT NULL AUTO_INCREMENT,
+    `id` bigint NOT NULL,
     `adult` bit NOT NULL,
-    `title` nvarchar(50) NOT NULL,
+    `language` nchar(5) NOT NULL,
+    `original_title` nvarchar(50) NOT NULL,
     `release_date` date NOT NULL,
     `runtime` int NOT NULL,
-    `original_title` nvarchar(50) NOT NULL,
-    `language` nchar(5) NOT NULL,
-    `genre` int NOT NULL,
+    `genre` array NOT NULL,
     PRIMARY KEY (`id`)
 )ENGINE=InnoDB;
+
 
 CREATE TABLE `genero`(
     `id` bigint NOT NULL AUTO_INCREMENT,
@@ -30,7 +30,7 @@ CREATE TABLE `user`(
     `first_name` nvarchar(20) NOT NULL,
     `last_name` nvarchar(20) NOT NULL,
     `mail` nvarchar(50) NOT NULL, 
-    `lista` int,
+    `favoritos` int,
     PRIMARY KEY (`id`)
 )ENGINE=InnoDB;
 

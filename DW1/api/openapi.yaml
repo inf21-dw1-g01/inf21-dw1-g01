@@ -76,7 +76,7 @@ paths:
       tags:
       - GeneroController
       summary: Retrieve Genero
-      operationId: retrieveGenero
+      operationId: retrieveGeneros
       responses:
         "200":
           description: Array of Genero model instances
@@ -96,7 +96,7 @@ paths:
       tags:
       - GeneroController
       summary: Retrieve Genero
-      operationId: retrieveGeneros
+      operationId: retrieveGenero
       parameters:
       - name: id
         in: path
@@ -134,7 +134,7 @@ paths:
       tags:
       - UserController
       summary: Retrieve User
-      operationId: retrieveUser
+      operationId: retrieveUsers
       responses:
         "200":
           description: Array of user model instances
@@ -147,14 +147,17 @@ paths:
                 x-content-type: application/json
             application/xml:
               schema:
-                $ref: '#/components/schemas/inline_response_200_1'
+                type: array
+                items:  
+                  $ref: '#/components/schemas/inline_response_200_1'
+                x-content-type: application/xml
       x-swagger-router-controller: UserController
-  /User/{id}{first_name}:
+  /User/{id}:
     get:
       tags:
       - UserController
       summary: Retrieve User
-      operationId: retrieveUsers
+      operationId: retrieveUser
       parameters:
       - name: id
         in: path
@@ -162,16 +165,9 @@ paths:
         style: simple
         explode: false
         schema:
-          minimum: 5
+          minimum: 1
           type: integer
           format: int64
-      - name: first_name
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
       responses:
         "200":
           description: Success
@@ -201,15 +197,15 @@ paths:
         style: simple
         explode: false
         schema:
-          minimum: 2
+          minimum: 1
           type: integer
           format: int64
         examples:
           one:
-            summary: Retrieve Filmes id 1
+            summary: Retrieve Favoritos id 1
             value: 1
           two:
-            summary: Retrieve Filmes id 2
+            summary: Retrieve Favoritos id 2
             value: 2
       responses:
         "200":
@@ -217,10 +213,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Filmes'
+                $ref: '#/components/schemas/User'
             application/xml:
               schema:
-                $ref: '#/components/schemas/Filmes'
+                $ref: '#/components/schemas/User'
         "400":
           description: Bad request
         "404":
@@ -233,6 +229,15 @@ paths:
       operationId: updateFavoritos
       parameters:
       - name: fav
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          minimum: 1
+          type: integer
+          format: int64
+      - name: filme_id
         in: path
         required: true
         style: simple
@@ -307,7 +312,6 @@ components:
     Filmes:
       title: Filmes
       required:
-      - genre
       - id
       - title
       type: object
@@ -327,9 +331,9 @@ components:
         language:
           type: string
         genre:
-          type: string
+          type: array
         adult:
-          type: string
+          type: boolean
       additionalProperties: false
       example:
         original_title: original_title
@@ -358,8 +362,8 @@ components:
           type: string
         mail:
           type: string
-        lista:
-          type: integer
+        favoritos:
+          type: array
       additionalProperties: false
       example:
         mail: mail

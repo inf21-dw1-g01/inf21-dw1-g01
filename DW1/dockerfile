@@ -1,0 +1,12 @@
+FROM node:14
+
+LABEL mantainers="Mariana Pereira A038553, Mário Rodrigues A039139, Ana Azevedo A039139"
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install production 
+
+CMD ["npm", "start"]
+

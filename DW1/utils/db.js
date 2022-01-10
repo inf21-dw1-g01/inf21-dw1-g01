@@ -1,5 +1,4 @@
 'user strict';
-
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
@@ -16,5 +15,6 @@ connection.connect (function(err){
 }
 console.log('Database connection active.');
 });
+
 
 module.exports = connection;

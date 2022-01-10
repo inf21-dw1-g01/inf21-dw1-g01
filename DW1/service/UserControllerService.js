@@ -8,7 +8,11 @@ var sql = require('../utils/db.js');
  *
  * returns List
  **/
-exports.retrieveUser = function() {
+
+
+
+
+/*exports.retrieveUser = function() {
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = [ {
@@ -16,19 +20,14 @@ exports.retrieveUser = function() {
   "last_name" : "last_name",
   "id" : 0,
   "first_name" : "first_name"
-}, {
-  "mail" : "mail",
-  "last_name" : "last_name",
-  "id" : 0,
-  "first_name" : "first_name"
-} ];
+}];
     if (Object.keys(examples).length > 0) {
       resolve(examples[Object.keys(examples)[0]]);
     } else {
       resolve();
     }
   });
-}
+}*/
 
 
 /**
@@ -40,7 +39,9 @@ exports.retrieveUser = function() {
  * mail String 
  * returns User
  **/
-exports.retrieveUsers = function(id,first_name,last_name,mail) {
+
+
+/*exports.retrieveUsers = function() {
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = {
@@ -55,5 +56,40 @@ exports.retrieveUsers = function(id,first_name,last_name,mail) {
       resolve();
     }
   });
+}*/
+
+
+
+exports.retrieveUser = function(id) {
+  return new Promise(function(resolve, reject) {
+    sql.query("SELECT * FROM user WHERE id = ?", [id], function(err, res){
+      if (err){
+        console.log(err);
+        reject(err);
+      }
+      else{
+        console.log(res);
+        resolve(res[0]);
+      }
+  });
+});
 }
+
+
+
+exports.retrieveUsers = function() {
+    return new Promise(function(resolve, reject) {
+      sql.query("SELECT * FROM user", function(err, res){
+        if (err){
+          console.log(err);
+          reject(err);
+        }
+        else{
+          console.log(res);
+          resolve(res[0]);
+        }
+    });
+});
+}
+
 
