@@ -6,14 +6,14 @@ Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimen
 
 Este trabalho tem como âmbito o desenho e criação de um serviço web que permite a consulta de informação de filmes.
 
-## Organização do repositório ----------------------- VER
+## Organização do repositório 
 
 _O repositório está organizado da seguite maneira:_
 * **Source code** está no [src folder](src/).
 * Capítulos do relatório estão no [doc folder](doc/).
-* Initial [OpenApi document](api/openapi.yaml) ------------------ ???? 
 
-## Galeria ----------------------- VER
+
+## Galeria 
 
 | Métodos                      | Resultado   |
 | ---------------------------- | ----------- |
@@ -27,14 +27,17 @@ _O repositório está organizado da seguite maneira:_
 | POST (Favoritos{id})         | ![Post Fav_id](doc/images/image11.png)       |
 | Delete (Favoritos{id})       | ![Delete Fav_id](doc/images/image12.png)       |
 
-## Tecnologias ----------------------- VER
+## Tecnologias 
 
 _As tecnologias usadas neste projeto, foram as seguites:_
 * Javascript
 * nodeJS
+* MySQL
+* Yaml
+* Docker
 
 
-### Frameworks e Livrarias ----------------------- VER
+### Frameworks e Livrarias 
 
 _Did you use any aditional libraries? Describe them here._
 * Docker
