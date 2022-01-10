@@ -80,7 +80,7 @@ exports.retrieveFavoritos = function() {
  exports.updateFavoritos = function(body,fav) {
   return new Promise(function(resolve, reject) {
     console.log(body);
-    sql.query("UPDATE favoritos set id = ?, original_title = ?, release_date = ?, genre = ?, runtime = ?, language = ?, title = ?, adult = ?", [body.id, body.original_title, body.release_date, body.genre, body.runtime, body.language, body.title, body.adult], function (err, res){
+    sql.query("INSERT favoritos set id = ?, original_title = ?, release_date = ?, genre = ?, runtime = ?, language = ?, title = ?, adult = ?", [body.id, body.original_title, body.release_date, body.genre, body.runtime, body.language, body.title, body.adult], function (err, res){
         if(err){
           console.log(err);
           reject(err);
