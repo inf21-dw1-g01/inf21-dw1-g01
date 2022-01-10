@@ -34,13 +34,11 @@ CREATE TABLE `user`(
     `first_name` nvarchar(20) NOT NULL,
     `last_name` nvarchar(20) NOT NULL,
     `mail` nvarchar(50) NOT NULL, 
-    `lista` int,
+    `favoritos` int,
     PRIMARY KEY (`id`)
 )ENGINE=InnoDB;
 
 
-
-Select original_title ,adult, `language`, release_date, runtime ,genero.genero from filmes join genero_filme on Filmes.id = genero_filme.id_filme join genero on genero_filme.id_genero = genero.id
 
 CREATE TABLE `lista_filme`(
     `id_lista` int NOT NULL,
@@ -71,7 +69,7 @@ INSERT `lista_filme` (`id_lista`, `id_filme`) VALUES
 
 
 
-INSERT into `user` (`id`,`first_name`, `last_name`,`mail`, `lista`) VALUES 
+INSERT into `user` (`id`,`first_name`, `last_name`,`mail`, `favoritos`) VALUES 
 (1, 'Mariana', 'Pereira', 'a038553@ismai.com', 1),
 (2, 'Mário', 'Rodrigues', 'a039139@ismai.com', 2),
 (3, 'Ana', 'Azevedo', 'a039600@ismai.com', 3);
@@ -204,11 +202,11 @@ INSERT into `genero` (`genero`, `id`) VALUES
 ('Action', 1),
 ('Adventure', 2),
 ('Animation', 3),
-('omedy', 4),
+('Comedy', 4),
 ('Crime', 5),
-('ocumentary', 6),
-('rama', 7),
-('amily', 8),
+('Documentary', 6),
+('Drama', 7),
+('Family', 8),
 ('Fantasy', 9),
 ('History', 10),
 ('Horror', 11),
@@ -223,6 +221,6 @@ INSERT into `genero` (`genero`, `id`) VALUES
 
 
 
-/*Select Filmes.original_title, user.id, user.first_name, user.last_name, mail, user.lista from user
-join lista_filme on user.lista = lista_filme.id_lista
+/*Select Filmes.original_title, user.id, user.first_name, user.last_name, mail, user.favoritos from user
+join lista_filme on user.favoritos = lista_filme.id_lista
 join filmes on lista_filme.id_filme = filmes.id*/
