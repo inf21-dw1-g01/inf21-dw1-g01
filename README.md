@@ -11,7 +11,7 @@ Este trabalho tem como âmbito o desenho e criação de um serviço web que perm
 _O repositório está organizado da seguite maneira:_
 * **Source code** está no [src folder](src/).
 * Capítulos do relatório estão no [doc folder](doc/).
-* Initial [OpenApi document](api/openapi.yaml)
+* Initial [OpenApi document](api/openapi.yaml) ------------------ ???? 
 
 ## Galeria ----------------------- VER
 
@@ -49,8 +49,8 @@ _Estão adicionados um documento por capítulo_
 * Capítulo 1: [Apresentação do projeto](doc/c1.md)
 ### Recursos
 * Capítulo 2: [Recursos](doc/c2.md)
-### Produtos
-* Capítulo 3: [Produtos](doc/c3.md)
+### Produto
+* Capítulo 3: [Produto](doc/c3.md)
 ### Apresentação
 * Capítulo 4: [Apresentação](doc/c4.md)
 
