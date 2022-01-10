@@ -1,10 +1,10 @@
 # M2 - Desenvolvimento Web I
 
-Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimento Web I', uma disciplina de segundo ano do curso de informática da Universidade da Maia. Desenvolvido pelo Grupo _01_: [@AnaAzevedo](https://github.com/AnaAzevedo2), [@MarianaLopes](https://github.com/marlope02), [@MarioRodrigues](https://github.com/MarioRodrigues2304).
+Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimento Web I', uma disciplina do segundo ano do curso de informática da Universidade da Maia. Desenvolvido pelo Grupo _01_: [@AnaAzevedo](https://github.com/AnaAzevedo2), [@MarianaLopes](https://github.com/marlope02), [@MarioRodrigues](https://github.com/MarioRodrigues2304).
 
 ## Tema 
 
-Este trabalho tem como âmbito o desenho e criação de um serviço web que permite a consulta de informação de filmes.
+Este trabalho tem como âmbito o desenho e desenvolvimento de aplicações e serviços Web que neste caso que permite a consulta de informação de filmes.
 
 ## Organização do repositório ----------------------- VER
 
@@ -31,7 +31,7 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 
 ## Tecnologias ----------------------- VER
 
-_As tecnologias usadas neste projeto, foram as seguites:_
+_As linguagens usadas neste projeto, foram as seguites:_
 * Javascript
 * nodeJS
 
