@@ -15,8 +15,6 @@ _O repositório está organizado da seguite maneira:_
 
 ## Galeria ----------------------- VER
 
-_Please provide a galery of the final result, with small images_
-A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
 | Métodos                      | Resultado   |
 | ---------------------------- | ----------- |
 | GET (Filmes)                 | ![Get Filmes](doc/images/image4.png)       |
