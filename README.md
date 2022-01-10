@@ -6,7 +6,7 @@ Neste repositório está o projeto desenvolvido para a disciplina 'Desenvolvimen
 
 Este trabalho tem como âmbito o desenho e criação de um serviço web que permite a consulta de informação de filmes.
 
-## Organização do repositório
+## Organização do repositório ----------------------- VER
 
 _O repositório está organizado da seguite maneira:_
 * **Source code** está no [src folder](src/).
@@ -17,6 +17,17 @@ _O repositório está organizado da seguite maneira:_
 
 _Please provide a galery of the final result, with small images_
 A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
+| Métodos                      | Resultado   |
+| ---------------------------- | ----------- |
+| GET (Filmes)                 | ![Get Filmes](images/image09.png)       |
+| GET (Filmes{id})             | ![System architecture](images/image09.png)       |
+| GET (Genero)                 | ![System architecture](images/image09.png)       |
+| GET (Genero{id})             | ![System architecture](images/image09.png)       |
+| GET (User)                   | ![System architecture](images/image09.png)       |
+| GET (User{id}{first_name})   | ![System architecture](images/image09.png)       |
+| GET (Favoritos{id})          | ![System architecture](images/image09.png)       |
+| POST (Favoritos{id})         | ![System architecture](images/image09.png)       |
+| Delete (Favoritos{id})       | ![System architecture](images/image09.png)       |
 
 ## Tecnologias ----------------------- VER
 
@@ -31,7 +42,7 @@ _Did you use any aditional libraries? Describe them here._
 * Docker
 * NodeJS
 
-## Report
+## Relatório
 _Estão adicionados um documento por capítulo_
 
 ### Apresentação do projeto
